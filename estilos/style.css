@@ -3,5 +3,54 @@
 /* 
     paleta de cores
     Verde #49a09d
-    Lilás #5f2c82
+    Cinza #c7c3c3
+    Laranja #e78660
 */
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body, html{
+    background-color: #e78660
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section#login{
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section #imagem{
+    display: block;
+    background: #82602c url(../imagens/pexels-harry-smith-2886268.jpg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+}
+
+
+section #formulario{
+    display: block;
+    padding: 10px;
+    text-align: justify;
+}
