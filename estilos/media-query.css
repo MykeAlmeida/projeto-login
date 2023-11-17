@@ -33,14 +33,23 @@
         width: 80vw;
     }
 
+    section#login h1{
+        font-size: 2em;
+    }
+
+    section#login p{
+        font-size: 1.2em;
+        margin-bottom: 20px; /* ******* */
+    }
+
     section #imagem{
-        width: 55%;
+        width: 45%;
         height: 100%;
-        float: left;
+        float: right;
     }
 
     section #formulario{
-        width: 45%;
-        float: right;
+        width: 55%;
+        float: left;
     }
 }
