@@ -7,9 +7,6 @@
     Laranja #e78660
 */
 
-::-webkit-scrollbar-track{
-    display: none;
-}
 
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,97 +21,122 @@ body, html{
     background-color: #e78660
 }
 
-main{
-    height: 100vh;
+body, html, main{
     width: 100vw;
+    height: 97vh;
+}
+
+main{
     position: relative;
 }
 
 section#login{
     background-color: white;
     position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    width: 280px;
-    height: 570px;
-    border-radius: 20px;
+    left: 50%;
+    height: 535px;
+    width: 250px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
-    transition: width .3s, height .3s;
-    transition-timing-function: ease;
+    transition: ease width .3s, height .3s;
+    transform: translate(-50%, -50%);
 }
 
-section#login h1{
+section#login #imagem{
+    background: url(../imagens/pexels-harry-smith-2886268.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+
+section#login #formulario{
+    display: block;
+    padding: 10px;
+}
+
+
+section#login #formulario h1{
     text-align: center;
     margin-bottom: 10px;
 }
 
-section#login .campo{
-    background-color: #b37459;
-    margin: 10px 0;
-    height: 50px;
-    padding: 5px;
+section#login #formulario p{
+    font-size: .9em;
+}
+
+form .campo{
+    background-color: #5c5c5c;
+    width: 100%;
+    height: 40px;
     border-radius: 5px;
+    margin: 8px 0;
+    display: block;
 }
 
-section#login form .campo input{
+form .campo i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
     padding: 5px;
-    width: 80%;
-    margin: 5px 0 0 8px;
 }
 
-section#login .campo label{
-    display: none;
-}
-
-section #imagem{
-    display: block;
-    background: #82602c url(../imagens/pexels-harry-smith-2886268.jpg) no-repeat center;
-    background-size: cover;
-    height: 200px;
-}
-
-
-section #formulario{
-    display: block;
+form .campo input{
+    background-color: #c7c7c7;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 46px);
+    border-radius: 8px;
+    border: solid 2px #5c5c5c;
     padding: 10px;
-    text-align: justify;
+    transform: translateY(-10px);
 }
 
-form input[type= submit] {
+form input[type=submit]{
     display: block;
     width: 100%;
     height: 40px;
-    background-color: #eb8f6b;
+    background-color: #e78660;
     color: white;
-    font-size: 1em;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    border-bottom: 2px solid #5c5c5c6b;
 }
 
-form input[type= submit]:hover {
-    color: #585858;
-    background-color: #c7c3c3;
+form input[type=submit]:hover{
+    background-color: #5c5c5c;
+    border-bottom: solid 2px #e78660;
     transition: all .5s;
 }
 
 form a.botao{
     display: block;
     text-align: center;
-    border: 1px solid #eb8f6b;
-    color: #8b5843;
-    font-size: .8em;
-    border-radius: 5px;
+    width: 100%;
     height: 40px;
-    margin-top: 10px;
+    padding-bottom: 5px;
+    font-size: .9em;
+    border: solid 1px #e78660;
+    color: #5c5c5c;
+    border-radius: 5px;
+    margin-top: 8px;
 }
 
-form a.botao:hover{
-    background-color: #c7c3c3;
-    color: #585858;
-    border: solid 1px #c7c3c3;
+form .botao:hover{
+    background-color: #5c5c5c;
+    border: solid 1px white;
+    color: white;
     transition: all .5s;
 }
+
+.botao i{
+    font-size: 1.3em;
+    padding-top: 6px; 
+}
+
+
+

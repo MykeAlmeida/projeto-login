@@ -16,24 +16,24 @@
                 <!-- IMAGEM -->
             </div>
             <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <header>
+                    <h1>Login</h1>
+                    <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                </header>
 
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
-                        <i class="material-icons">person</i>
-                        <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail aqui" required maxlength="30" autocomplete="email">
-                        <label for="iemail">Login:</label> 
+                        <i class="material-icons">person
+                        </i>
+                        <input type="email" name="login" id="ilogin" autocomplete="email" placeholder="Digite seu e-mail" required maxlength="30">
                     </div>
                     <div class="campo">
-                        <i class="material-icons">vpn_key</i>
-                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha aqui" required minlength="8" maxlength="15" autocomplete="current-password">
-                        <label for="isenha">Senha:</label>
+                        <i class="material-icons">vpn_key
+                        </i>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required autocomplete="current-password" minlenght="8" maxlenght="30">
                     </div>
-                    <input type="submit" value="Entrar">
-                    <a href="esqueci.html" class="botao">Esqueci a Senha
-                    <i class="material-icons">email</i>
-                    </a>
+                    <input type="submit" value="Enviar">
+                    <a href="esqueci.html" class="botao"> Esqueci a senha <i class="material-icons">mail</i></a>
                 </form>
             </div>
         </section>

@@ -1,55 +1,70 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+ @media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
     
     body{
-        background-image: linear-gradient(to top, #e78660, #c7c3c3 85%);
+        background-image: linear-gradient(to top, #e78660, #c7c3c3);
+    }
+
+    header{
+        margin-bottom: 55px;
     }
     
     section#login{
-        width: 70vw;
+        width: 90vw;
+        height: 400px;
     }
 
-    section #imagem{
+    section#login #imagem{
         float: left;
         width: 35%;
         height: 100%;
     }
-    
-    section #formulario{
+
+    section#login #formulario{
         float: right;
         width: 65%;
+
     }
 
-}
+    section#login #formulario p{
+        font-size: 1.1em;
+    }
+    
+} 
 
 @media screen and (min-width: 992px) {
     
     body{
-        background-image: linear-gradient(to top, #e78660 20%, #c7c3c3 90%);
-    }
-    
-    section#login{
-        width: 80vw;
+        background-image: linear-gradient(to top, #e78660, #c7c3c3);
     }
 
-    section#login h1{
+    header{
+        margin-bottom: 40px;
+    }
+
+    section#login{
+        width: 992px;
+        height: 390px;
+    }
+
+    section#login #imagem{
+        float: right;
+        width: 45%;
+        height: 100%;
+    }
+
+    section#login #formulario{
+        float: left;
+        width: 55%;
+    }
+
+    section#login #formulario h1{
         font-size: 2em;
     }
 
-    section#login p{
+    section#login #formulario p{
         font-size: 1.2em;
-        margin-bottom: 20px; /* ******* */
-    }
-
-    section #imagem{
-        width: 45%;
-        height: 100%;
-        float: right;
-    }
-
-    section #formulario{
-        width: 55%;
-        float: left;
     }
 }
+
