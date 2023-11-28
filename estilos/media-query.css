@@ -30,6 +30,17 @@
     section#login #formulario p{
         font-size: 1.1em;
     }
+
+    form .campo input{
+        background-color: #c7c7c7;
+        font-size: 1em;
+        height: 90%;
+        width: calc(100% - 46px);
+        border-radius: 10px;
+        border: solid 1px #5c5c5c;
+        padding: 10px;
+        transform: translateY(-11px);
+    }
     
 } 
 
@@ -65,6 +76,17 @@
 
     section#login #formulario p{
         font-size: 1.2em;
+    }
+
+    form .campo input{
+        background-color: #c7c7c7;
+        font-size: 1em;
+        height: 90%;
+        width: calc(100% - 46px);
+        border-radius: 10px;
+        border: solid 1px #5c5c5c;
+        padding: 10px;
+        transform: translateY(-10px);
     }
 }
 
